@@ -6,43 +6,99 @@
     <title>Curriculum</title>
 </head>
 
+<!--
+    CSS
+-->
+<style>
+    table {
+        text-align: center;
+        background-color: cornflowerblue
+    }
+
+    ul {
+        text-align: left
+    }
+</style>
+
 <body>
+    <!--
+        table:
+            - width: largura (% ou px)
+            - border: largura da borda (unidade: 1, 2, 3...)
+    -->
     <table width="75%" border="1">
+        <!--
+            caption: título da tabela
+        -->
         <caption>CURRICULUM VITAE</caption>
-        <tr>
-            <td colspan="6"><img alt="foto" title="Foto Curriculum" src="lynx.PNG" /></td>
-        </tr>
-        <tr>
-            <th>Nome:</th>
-            <td colspan="5">Abc Def Ghij</td>
-        </tr>
-        <tr>
-            <th>CPF:</th>
-            <td>321.321.321-32</td>
-            <th>RG:</th>
-            <td>123.123.123-23</td>
-            <th>Telefone:</th>
-            <td>(61) 1234-5678</td>
-        </tr>
-        <tr>
-            <th>Pai:</th>
-            <td colspan="3">Yxz Asdf Asdf</td>
-            <th>Mãe:</th>
-            <td>Yfsd Asdg Fgh</td>
-        </tr>
-        <tr>
-            <th>CEP:</th>
-            <td colspan="2">12.123-23</td>
-            <th>Endereço:</th>
-            <td colspan="2">ABC XYZ, Apto. 123</td>
-        </tr>
+        <!--
+            "tbody" -> table body ou corpo da tabela
+            tbody: organizar todos os elementos da minha tabela que definem o corpo
+        -->
+        <tbody>
+            <!--
+                "tr" -> table row ou linha da tabela
+                tr: nova linha ou row (linha)
+            -->
+            <tr>
+                <!--
+                    td: nova coluna
+                        - colspan: espaçamento da coluna
+                -->
+                <!--
+                    img: imagem
+                        - alt: se o carregamento falhar carregar o texto em 'alt'
+                        - title: título
+                        - src: source ou fonte
+                -->
+                <td colspan="6"><img alt="foto" title="Foto Curriculum" src="lynx.PNG" /></td>
+            </tr>
+            <tr>
+                <!--
+                    th: cabeçalho da linha ou table header
+                    "th" -> bold (negrito) + center (centralizar o texto)
+                -->
+                <th>Nome:</th>
+                <td colspan="5">Abc Def Ghij</td>
+            </tr>
+            <tr>
+                <th>CPF:</th>
+                <td>321.321.321-32</td>
+                <th>RG:</th>
+                <td>123.123.123-23</td>
+                <th>Telefone:</th>
+                <td>(61) 1234-5678</td>
+            </tr>
+            <tr>
+                <th>Pai:</th>
+                <td colspan="3">Yxz Asdf Asdf</td>
+                <th>Mãe:</th>
+                <td>Yfsd Asdg Fgh</td>
+            </tr>
+            <tr>
+                <th>CEP:</th>
+                <td colspan="2">12.123-23</td>
+                <th>Endereço:</th>
+                <td colspan="2">ABC XYZ, Apto. 123</td>
+            </tr>
+        </tbody>
+        <!--
+            "tfoot" -> table foot ou rodapé da tabela
+            tfoot: organiza os items do rodapé da tabela
+        -->
         <tfoot>
             <tr>
                 <th colspan="6">Experiência:</th>
             </tr>
             <tr>
                 <td colspan="6">
+                    <!--
+                        ul: organizar os items de uma lista
+                    -->
                     <ul>
+                        <!--
+                            li: listagem de um item da lista
+                        -->
                         <li>Criar páginas em HTML 5.</li>
                     </ul>
                 </td>
