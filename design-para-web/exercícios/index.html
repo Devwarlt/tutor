@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Exercício - A1</title>
+	</head>
+	<body>
+		<img src="logo.PNG" width="30%" heigth="30%" title="Projeção" alt="projecao_img" />
+		<form action="ok.html" method="GET">		
+			<table width="100%">
+				<tbody>
+					<tr>
+						<td>Nome Completo</td>
+						<td><input type="text" id="nome_completo" /></td>
+					</tr>
+					<tr>
+						<td>Endereço</td>
+						<td><input type="text" id="endereco" /></td>
+					</tr>
+					<tr>
+						<td>Cidade</td>
+						<td><input  type="text" id="cidade" /></td>
+						<td>CEP</td>
+						<td><input  type="text" id="cep" /></td>
+					</tr>
+					<tr>
+						<td>Telefone Fixo</td>
+						<td><input  type="text" id="telefone_fixo" /></td>
+						<td>Telefone Celular</td>
+						<td><input  type="text" id="telefone_celular" /></td>
+					</tr>
+					<tr>
+						<td>E-mail Particular</td>
+						<td><input type="text" id="email_particular" /></td>
+					</tr>
+					<tr>
+						<td>Unidade</td>
+						<td>
+							<select id="unidade" name="unidade">
+								<option disabled selected>Selecione a unidade</option>
+								<option>TAGUATINGA NORTE CAMPUS I</option>
+								<option>TAGUATINGA NORTE CAMPUS II</option>
+							</select>
+						</td>
+						<td>Curso</td>
+						<td>
+							<select id="curso" name="curso">
+								<option disabled selected>Selecione o curso</option>
+								<option value="tads">TADS</option>
+								<option value="si">SI</option>
+								<option value="eng_soft">Engenharia de Software</option>
+							</select>
+						</td>
+					</tr>
+					<!-- [INÍCIO] Quebra de linha -->
+					<tr>
+						<td colspan="4">
+							<table width="100%" border="1">
+								<tbody>
+									<tr>
+										<td bgcolor="red"></td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+					<!-- [FIM] Quebra de linha -->
+					<tr>
+						<th align="left" colspan="3">Carga horária semanal (total) em 2019.1 na Faculdades Projeção:</th>
+						<td><input type="text" id="email_particular" /></td>
+					</tr>
+					<tr><th align="left" colspan="4">Carga horária por Unidade em 2018.1:</th></tr>
+					<tr>
+						<td colspan="4">
+							<table width="100%">
+								<tbody>
+									<tr>
+										<td>CEI:</td>
+										<td><input  type="number" min="0" value="0" id="cei" /></td>
+										<td>SOB:</td>
+										<td><input  type="number" min="0" value="0"  id="sob" /></td>
+										<td>TGN:</td>
+										<td><input  type="number" min="0" value="0"  id="tgn" /></td>
+									</tr>
+									<tr>
+										<td>GUA:</td>
+										<td><input  type="number" min="0" value="0"  id="gua" /></td>
+										<td>TAG:</td>
+										<td colspan="2"><input min="0" value="0"  type="number" id="tag" /></td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td>Graduação:</td>
+						<td><input  type="text" id="graduacao" /></td>
+						<td>Ano de conclusão:</td>
+						<td><input  type="number" min="2019" value="2019" id="ano_de_conclusao" /></td>
+					</tr>
+					<tr>
+						<th align="left">Maior titulação obtida:</th>
+						<td><input type="text" id="maior_titulacao_obtida" /></td>
+					</tr>
+					<tr>
+						<td>Titulação em andamento?</td>
+						<td><input type="checkbox" id="titulacao_andamento" /></td>
+						<td>Informe qual:</td>
+						<td><input type="text" id="titulacao" /></td>
+					</tr>
+					<tr>
+						<td>Estimativa de término:</td>
+						<td><input type="date" id="estimativa_de_termino" /></td>
+					</tr>
+					<tr>
+						<td>Principal atuação profissional:</td>
+						<td><input type="text" id="principal_atuacao_profissional" /></td>
+					</tr>
+					<tr>
+						<td>Tempo de experiência profissional:</td>
+						<td><input type="number" min="0" value="0" id="tempo_experiencia_profissional" /></td>
+						<td>Tempo de experiência em magistério superior:</td>
+						<td><input type="number" min="0" value="0" id="principal_atuacao_profissional" /></td>
+					</tr>
+					<tr>
+						<td>Tempo de experiência da docência na educação básica:</td>
+						<td><input type="number" min="0" value="0" id="tempo_experiencia_docencia" /> (*)</td>
+					</tr>
+					<tr>
+						<th align="left" colspan="4">(*) SOMENTE PARA DOCENTES DA ESCOLA DE FORMAÇÃO DE PROFESSORES</th>
+					</tr>
+					<tr>
+						<td>Data última atualização do Lattes:</td>
+						<td><input type="date" id="data_atualizacao_lattes" /></td>
+					</tr>
+					<tr>
+						<td colspan="4">Informe as publicações nos últimos 3 anos (Título, Ano e Local de publicação)</td>
+					</tr>
+					<tr>
+						<td colspan="4">
+							<textarea rows="4" cols="72"></textarea>
+						</td>
+					</tr>
+					<!-- [INÍCIO] Quebra de linha -->
+					<tr>
+						<td colspan="4">
+							<table width="100%" border="1">
+								<tbody>
+									<tr>
+										<td bgcolor="red"></td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+					<!-- [FIM] Quebra de linha -->
+					<tr>
+						<th align="left" colspan="4">Grade horária das disciplinas ministradas em 2018/1 (marque um X)</th>
+					</tr>
+					<tr>
+						<td colspan="4">
+							<table width="100%">
+								<tbody>
+									<tr>
+										<th align="left" width="10%">MATUTINO</th>
+										<td>
+											<table width="100%" align="center">
+												<tbody>
+													<tr>
+														<td>Segunda-feira</td>
+														<td>Terça-feira</td>
+														<td>Quarta-feira</td>
+														<td>Quinta-feira</td>
+														<td>Sexta-feira</td>
+													</tr>
+													<tr>
+														<td>
+															<select id="seg_mat" name="seg_mat">
+																<option disabled selected>--</option>
+																<option value="cei">CEI</option>
+																<option value="sob">SOB</option>
+																<option value="tgn">TGN</option>
+																<option value="gua">GUA</option>
+																<option value="tag">TAG</option>
+															</select>
+														</td>
+														<td>
+															<select id="ter_mat" name="ter_mat">
+																<option disabled selected>--</option>
+																<option value="cei">CEI</option>
+																<option value="sob">SOB</option>
+																<option value="tgn">TGN</option>
+																<option value="gua">GUA</option>
+																<option value="tag">TAG</option>
+															</select>
+														</td>
+														<td>
+															<select id="qua_mat" name="qua_mat">
+																<option disabled selected>--</option>
+																<option value="cei">CEI</option>
+																<option value="sob">SOB</option>
+																<option value="tgn">TGN</option>
+																<option value="gua">GUA</option>
+																<option value="tag">TAG</option>
+															</select>
+														</td>
+														<td>
+															<select id="qui_mat" name="qui_mat">
+																<option disabled selected>--</option>
+																<option value="cei">CEI</option>
+																<option value="sob">SOB</option>
+																<option value="tgn">TGN</option>
+																<option value="gua">GUA</option>
+																<option value="tag">TAG</option>
+															</select>
+														</td>
+														<td>
+															<select id="sex_mat" name="sex_mat">
+																<option disabled selected>--</option>
+																<option value="cei">CEI</option>
+																<option value="sob">SOB</option>
+																<option value="tgn">TGN</option>
+																<option value="gua">GUA</option>
+																<option value="tag">TAG</option>
+															</select>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+									</tr>
+									<tr></tr>
+									<tr>
+										<th align="left" width="10%">NOTURNO</th>
+										<td>
+											<table width="100%" align="center">
+												<tbody>
+													<tr>
+														<td>Segunda-feira</td>
+														<td>Terça-feira</td>
+														<td>Quarta-feira</td>
+														<td>Quinta-feira</td>
+														<td>Sexta-feira</td>
+													</tr>
+													<tr>
+														<td>
+															<select id="seg_not" name="seg_not">
+																<option disabled selected>--</option>
+																<option value="cei">CEI</option>
+																<option value="sob">SOB</option>
+																<option value="tgn">TGN</option>
+																<option value="gua">GUA</option>
+																<option value="tag">TAG</option>
+															</select>
+														</td>
+														<td>
+															<select id="ter_not" name="ter_not">
+																<option disabled selected>--</option>
+																<option value="cei">CEI</option>
+																<option value="sob">SOB</option>
+																<option value="tgn">TGN</option>
+																<option value="gua">GUA</option>
+																<option value="tag">TAG</option>
+															</select>
+														</td>
+														<td>
+															<select id="qua_not" name="qua_not">
+																<option disabled selected>--</option>
+																<option value="cei">CEI</option>
+																<option value="sob">SOB</option>
+																<option value="tgn">TGN</option>
+																<option value="gua">GUA</option>
+																<option value="tag">TAG</option>
+															</select>
+														</td>
+														<td>
+															<select id="qui_not" name="qui_not">
+																<option disabled selected>--</option>
+																<option value="cei">CEI</option>
+																<option value="sob">SOB</option>
+																<option value="tgn">TGN</option>
+																<option value="gua">GUA</option>
+																<option value="tag">TAG</option>
+															</select>
+														</td>
+														<td>
+															<select id="sex_not" name="sex_not">
+																<option disabled selected>--</option>
+																<option value="cei">CEI</option>
+																<option value="sob">SOB</option>
+																<option value="tgn">TGN</option>
+																<option value="gua">GUA</option>
+																<option value="tag">TAG</option>
+															</select>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<th align="left" colspan="4">Disponibilidade de horário em 2018/2 (marque conforme a SIGAL da Unidade): [SOB, CEI, TAG, GUA e TGN] a disponibilidade.</th>
+					</tr>
+					<tr>
+						<td colspan="4">
+							<table width="100%">
+								<tbody>
+									<tr>
+										<th align="left" width="10%">MATUTINO</th>
+										<td>
+											<table width="100%" align="center">
+												<tbody>
+													<tr>
+														<td>Segunda-feira</td>
+														<td>Terça-feira</td>
+														<td>Quarta-feira</td>
+														<td>Quinta-feira</td>
+														<td>Sexta-feira</td>
+													</tr>
+													<tr>
+														<td>
+															<select id="seg_mat_disp" name="seg_mat_disp">
+																<option disabled selected>--</option>
+																<option value="cei">CEI</option>
+																<option value="sob">SOB</option>
+																<option value="tgn">TGN</option>
+																<option value="gua">GUA</option>
+																<option value="tag">TAG</option>
+															</select>
+														</td>
+														<td>
+															<select id="ter_mat_disp" name="ter_mat_disp">
+																<option disabled selected>--</option>
+																<option value="cei">CEI</option>
+																<option value="sob">SOB</option>
+																<option value="tgn">TGN</option>
+																<option value="gua">GUA</option>
+																<option value="tag">TAG</option>
+															</select>
+														</td>
+														<td>
+															<select id="qua_mat_disp" name="qua_mat_disp">
+																<option disabled selected>--</option>
+																<option value="cei">CEI</option>
+																<option value="sob">SOB</option>
+																<option value="tgn">TGN</option>
+																<option value="gua">GUA</option>
+																<option value="tag">TAG</option>
+															</select>
+														</td>
+														<td>
+															<select id="qui_mat_disp" name="qui_mat_disp">
+																<option disabled selected>--</option>
+																<option value="cei">CEI</option>
+																<option value="sob">SOB</option>
+																<option value="tgn">TGN</option>
+																<option value="gua">GUA</option>
+																<option value="tag">TAG</option>
+															</select>
+														</td>
+														<td>
+															<select id="sex_mat_disp" name="sex_mat_disp">
+																<option disabled selected>--</option>
+																<option value="cei">CEI</option>
+																<option value="sob">SOB</option>
+																<option value="tgn">TGN</option>
+																<option value="gua">GUA</option>
+																<option value="tag">TAG</option>
+															</select>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+									</tr>
+									<tr></tr>
+									<tr>
+										<th align="left" width="10%">NOTURNO</th>
+										<td>
+											<table width="100%" align="center">
+												<tbody>
+													<tr>
+														<td>Segunda-feira</td>
+														<td>Terça-feira</td>
+														<td>Quarta-feira</td>
+														<td>Quinta-feira</td>
+														<td>Sexta-feira</td>
+													</tr>
+													<tr>
+														<td>
+															<select id="seg_not_disp" name="seg_not_disp">
+																<option disabled selected>--</option>
+																<option value="cei">CEI</option>
+																<option value="sob">SOB</option>
+																<option value="tgn">TGN</option>
+																<option value="gua">GUA</option>
+																<option value="tag">TAG</option>
+															</select>
+														</td>
+														<td>
+															<select id="ter_not_disp" name="ter_not_disp">
+																<option disabled selected>--</option>
+																<option value="cei">CEI</option>
+																<option value="sob">SOB</option>
+																<option value="tgn">TGN</option>
+																<option value="gua">GUA</option>
+																<option value="tag">TAG</option>
+															</select>
+														</td>
+														<td>
+															<select id="qua_not_disp" name="qua_not_disp">
+																<option disabled selected>--</option>
+																<option value="cei">CEI</option>
+																<option value="sob">SOB</option>
+																<option value="tgn">TGN</option>
+																<option value="gua">GUA</option>
+																<option value="tag">TAG</option>
+															</select>
+														</td>
+														<td>
+															<select id="qui_not_disp" name="qui_not_disp">
+																<option disabled selected>--</option>
+																<option value="cei">CEI</option>
+																<option value="sob">SOB</option>
+																<option value="tgn">TGN</option>
+																<option value="gua">GUA</option>
+																<option value="tag">TAG</option>
+															</select>
+														</td>
+														<td>
+															<select id="sex_not_disp" name="sex_not_disp">
+																<option disabled selected>--</option>
+																<option value="cei">CEI</option>
+																<option value="sob">SOB</option>
+																<option value="tgn">TGN</option>
+																<option value="gua">GUA</option>
+																<option value="tag">TAG</option>
+															</select>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+					<!-- [INÍCIO] Quebra de linha -->
+					<tr>
+						<td colspan="4">
+							<table width="100%" border="1">
+								<tbody>
+									<tr>
+										<td bgcolor="red"></td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+					<!-- [FIM] Quebra de linha -->
+				</tbody>
+				<tfoot>
+					<tr>
+						<th align="left" colspan="4">Disciplinas que tem interesse em ministrar/curso em 2018/2:</th>
+					</tr>
+					<tr>
+						<td colspan="4">
+							<textarea rows="4" cols="72"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="4">OBS.: faça sua indicação da(s) disciplinas diante de uma ordem de preferência/domínio da matéria, indicando ainda a(s) unidade(s) em que gostaria de ministrar a(s) aula(s). Indique, no mínimo, 4 (quatro) disciplinas.</td>
+					</tr>
+					<tr>
+						<td>1a. Opção:</td>
+						<td><input type="text" id="opcao_1"/></td>
+						<td>Unidade:</td>
+						<td>
+							<select id="unid_1" name="unid_1">
+								<option disabled selected>--</option>
+								<option value="cei">CEI</option>
+								<option value="sob">SOB</option>
+								<option value="tgn">TGN</option>
+								<option value="gua">GUA</option>
+								<option value="tag">TAG</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>2a. Opção:</td>
+						<td><input type="text" id="opcao_2"/></td>
+						<td>Unidade:</td>
+						<td>
+							<select id="unid_2" name="unid_2">
+								<option disabled selected>--</option>
+								<option value="cei">CEI</option>
+								<option value="sob">SOB</option>
+								<option value="tgn">TGN</option>
+								<option value="gua">GUA</option>
+								<option value="tag">TAG</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>3a. Opção:</td>
+						<td><input type="text" id="opcao_3"/></td>
+						<td>Unidade:</td>
+						<td>
+							<select id="unid_3" name="unid_3">
+								<option disabled selected>--</option>
+								<option value="cei">CEI</option>
+								<option value="sob">SOB</option>
+								<option value="tgn">TGN</option>
+								<option value="gua">GUA</option>
+								<option value="tag">TAG</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>4a. Opção:</td>
+						<td><input type="text" id="opcao_4"/></td>
+						<td>Unidade:</td>
+						<td>
+							<select id="unid_4" name="unid_4">
+								<option disabled selected>--</option>
+								<option value="cei">CEI</option>
+								<option value="sob">SOB</option>
+								<option value="tgn">TGN</option>
+								<option value="gua">GUA</option>
+								<option value="tag">TAG</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>5a. Opção:</td>
+						<td><input type="text" id="opcao_5"/></td>
+						<td>Unidade:</td>
+						<td>
+							<select id="unid_5" name="unid_5">
+								<option disabled selected>--</option>
+								<option value="cei">CEI</option>
+								<option value="sob">SOB</option>
+								<option value="tgn">TGN</option>
+								<option value="gua">GUA</option>
+								<option value="tag">TAG</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>6a. Opção:</td>
+						<td><input type="text" id="opcao_6"/></td>
+						<td>Unidade:</td>
+						<td>
+							<select id="unid_6" name="unid_6">
+								<option disabled selected>--</option>
+								<option value="cei">CEI</option>
+								<option value="sob">SOB</option>
+								<option value="tgn">TGN</option>
+								<option value="gua">GUA</option>
+								<option value="tag">TAG</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>7a. Opção:</td>
+						<td><input type="text" id="opcao_7"/></td>
+						<td>Unidade:</td>
+						<td>
+							<select id="unid_7" name="unid_7">
+								<option disabled selected>--</option>
+								<option value="cei">CEI</option>
+								<option value="sob">SOB</option>
+								<option value="tgn">TGN</option>
+								<option value="gua">GUA</option>
+								<option value="tag">TAG</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>8a. Opção:</td>
+						<td><input type="text" id="opcao_8"/></td>
+						<td>Unidade:</td>
+						<td>
+							<select id="unid_8" name="unid_8">
+								<option disabled selected>--</option>
+								<option value="cei">CEI</option>
+								<option value="sob">SOB</option>
+								<option value="tgn">TGN</option>
+								<option value="gua">GUA</option>
+								<option value="tag">TAG</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>9a. Opção:</td>
+						<td><input type="text" id="opcao_9"/></td>
+						<td>Unidade:</td>
+						<td>
+							<select id="unid_9" name="unid_9">
+								<option disabled selected>--</option>
+								<option value="cei">CEI</option>
+								<option value="sob">SOB</option>
+								<option value="tgn">TGN</option>
+								<option value="gua">GUA</option>
+								<option value="tag">TAG</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>10a. Opção:</td>
+						<td><input type="text" id="opcao_10"/></td>
+						<td>Unidade:</td>
+						<td>
+							<select id="unid_10" name="unid_10">
+								<option disabled selected>--</option>
+								<option value="cei">CEI</option>
+								<option value="sob">SOB</option>
+								<option value="tgn">TGN</option>
+								<option value="gua">GUA</option>
+								<option value="tag">TAG</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>Observações:</td>
+					</tr>
+					<tr>
+						<td colspan="4">
+							<textarea rows="4" cols="72"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<table width="100%">
+								<tr>
+									<td><input type="submit" value="Adicionar Professor" /></td>
+									<td><input type="button" value="Início" /></td>
+									<td><input type="button" value="Anterior" /></td>
+									<td><input type="button" value="Próximo" /></td>
+									<td><input type="button" value="Fim" /></td>
+									<td><input type="button" value="Localizar" /></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</tfoot>
+			</table>
+		</form>
+	</body>
+</html>
