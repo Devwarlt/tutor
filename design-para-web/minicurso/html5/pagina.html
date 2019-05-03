@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<!--
+    https://getbootstrap.com/docs/4.3/getting-started/introduction/
+    https://getbootstrap.com/docs/3.3/components/
+-->
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Título da página</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../src/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../src/css/glyphicons.css" />
+</head>
+
+<style>
+    .form-signin {
+        width: 100%;
+        max-width: 330px;
+        padding: 15px;
+        margin: auto;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark primary-color bg-primary">
+        <a class="navbar-brand" href="#">Minha primeira navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sampleId"
+            aria-controls="sampleId" aria-expanded="false" aria-label="Fechar barra de navegação.">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="sampleId">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Página 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Página 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Página 3</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="sampleDropdownId" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">"Select"</a>
+                    <div class="dropdown-menu dropdown-primary" aria-labelledby="sampleDropdownId">
+                        <a class="dropdown-item" href="#">Opção 1</a>
+                        <a class="dropdown-item" href="#">Opção 2</a>
+                        <a class="dropdown-item" href="#">Opção 3</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline">
+                <div class="md-form my-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Pesquisar" aria-label="Pesquisar" />
+                </div>
+            </form>
+        </div>
+    </nav>
+    <div class="jumbotron text-center">
+        <h1>Meu título da minha primeira página!</h1>
+        <p>Meu primeiro parágrafo.</p>
+    </div>
+    <div class="container">
+        <div class="form-signin text-center">
+            <h3>Meu sistema de login (JavaScript / JQuery)</h3>
+            <div id="notification"></div>
+            <table class="table table-responsive">
+                <tbody>
+                    <tr id="nameBackground">
+                        <td>Nome:</td>
+                        <td><input id="name" type="text" /></td>
+                    </tr>
+                    <tr id="passwordBackground">
+                        <td>Senha:</td>
+                        <td><input id="password" type="password" /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button id="login" class="btn btn-sm btn-success" type="button">Entrar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <h2>Coluna 1</h2>
+                <p>Texto da coluna 1.</p>
+            </div>
+            <div class="col-sm-4">
+                <h2>Coluna 2</h2>
+                <p>Texto da coluna 2.</p>
+            </div>
+            <div class="col-sm-4">
+                <h2>Coluna 3</h2>
+                <p>Texto da coluna 3.</p>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-sm-4 alert alert-primary alert-dismissible fade show" role="alert">
+                <span class="glyphicon glyphicon-ok"></span>
+                <h3>Meu alerta (primary)</h3>
+                <hr />
+                <p>Mensagem.</p>
+                <button type="button" class="close" data-dimiss="alert" aria-label="Fechar alerta.">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="col-sm-4 alert alert-secondary alert-dismissible fade show" role="alert">
+                <span class="glyphicon glyphicon-ok"></span>
+                <h3>Meu alerta (secondary)</h3>
+                <hr />
+                <p>Mensagem.</p>
+                <button type="button" class="close" data-dimiss="alert" aria-label="Fechar alerta.">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="col-sm-4 alert alert-success alert-dismissible fade show" role="alert">
+                <span class="glyphicon glyphicon-ok"></span>
+                <h3>Meu alerta (success)</h3>
+                <hr />
+                <p>Mensagem.</p>
+                <button type="button" class="close" data-dimiss="alert" aria-label="Fechar alerta.">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="col-sm-4 alert alert-danger alert-dismissible fade show" role="alert">
+                <span class="glyphicon glyphicon-ok"></span>
+                <h3>Meu alerta (danger)</h3>
+                <hr />
+                <p>Mensagem.</p>
+                <button type="button" class="close" data-dimiss="alert" aria-label="Fechar alerta.">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="col-sm-4 alert alert-warning alert-dismissible fade show" role="alert">
+                <span class="glyphicon glyphicon-ok"></span>
+                <h3>Meu alerta (warning)</h3>
+                <hr />
+                <p>Mensagem.</p>
+                <button type="button" class="close" data-dimiss="alert" aria-label="Fechar alerta.">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="col-sm-4 alert alert-info alert-dismissible fade show" role="alert">
+                <span class="glyphicon glyphicon-ok"></span>
+                <h3>Meu alerta (info)</h3>
+                <hr />
+                <p>Mensagem.</p>
+                <button type="button" class="close" data-dimiss="alert" aria-label="Fechar alerta.">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="col-sm-4 alert alert-light alert-dismissible fade show" role="alert">
+                <span class="glyphicon glyphicon-ok"></span>
+                <h3>Meu alerta (light)</h3>
+                <hr />
+                <p>Mensagem.</p>
+                <button type="button" class="close" data-dimiss="alert" aria-label="Fechar alerta.">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="col-sm-4 alert alert-dark alert-dismissible fade show" role="alert">
+                <span class="glyphicon glyphicon-ok"></span>
+                <h3>Meu alerta (dark)</h3>
+                <hr />
+                <p>Mensagem.</p>
+                <button type="button" class="close" data-dimiss="alert" aria-label="Fechar alerta.">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="../src/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="../src/js/popper.min.js"></script>
+    <script src="../src/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#login").click(function (e) {
+                e.preventDefault();
+
+                var validName = "Bootstrap";
+                var validPassword = "123";
+                var delay = 2000;
+                var alertClassText = "text-danger";
+                var alertClassWarning = "alert alert-warning";
+                var alertClassSuccess = "alert alert-success";
+                var message = $("#notification");
+                var name = $("#name");
+                var password = $("#password");
+                var nameBackground = $("#nameBackground");
+                var passwordBackground = $("#passwordBackground");
+
+                message.removeClass(alertClassSuccess);
+                message.addClass(alertClassWarning);
+
+                if (name.val() === null || name.val() === '') {
+                    message.show();
+                    message.html("Nome nulo, por favor preencha o campo pendente.");
+                    nameBackground.addClass(alertClassText);
+                    window.setTimeout(function () {
+                        nameBackground.removeClass(alertClassText);
+                        message.hide();
+                    }, delay);
+                    return;
+                }
+
+                if (password.val() === null || password.val() === '') {
+                    message.show();
+                    message.html("Senha nula, por favor preencha o campo pendente.");
+                    passwordBackground.addClass(alertClassText);
+                    window.setTimeout(function () {
+                        passwordBackground.removeClass(alertClassText);
+                        message.hide();
+                    }, delay);
+                    return;
+                }
+                
+                if (name.val() !== validName) {
+                    message.show();
+                    message.html("Nome inválido!");
+                    window.setTimeout(function () {
+                        message.hide();
+                        message.html("");
+                    }, delay);
+                    return;
+                }
+
+                if (password.val() !== validPassword) {
+                    message.show();
+                    message.html("Senha inválida!");
+                    window.setTimeout(function () {
+                        message.hide();
+                        message.html("");
+                    }, delay);
+                    return;
+                }
+
+                message.show();
+                message.removeData(alertClassWarning);
+                message.addClass(alertClassSuccess);
+                message.html("Login efetuado com sucesso!");
+            });
+        });
+    </script>
+</body>
+
+</html>
