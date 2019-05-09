@@ -5,7 +5,7 @@
 int main() {
 	setlocale(LC_ALL, "Portuguese");
 	
-	Queue queue;
+	StaticQueue queue;
 	int element;
 	
 	Init(&queue);
