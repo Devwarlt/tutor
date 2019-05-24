@@ -1,0 +1,6 @@
+# Ignore VSCODE Folder
+/.vscode
+
+# C Bin files
+*.gch
+*.exe
