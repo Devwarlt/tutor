@@ -1,0 +1,2 @@
+[1]. https://www.devmedia.com.br/clausulas-inner-join-left-join-e-right-join-no-sql-server/18930
+[2]. https://www.devmedia.com.br/forum/qual-a-diferenca-entre-ddl-e-dml/563525
