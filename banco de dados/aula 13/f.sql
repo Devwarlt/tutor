@@ -4,9 +4,9 @@ insert into `Endereco`
 values
 	("Ceilândia Sul (Ceilândia)", "Quadra QNP 14 Conjunto U", "72231421", "Brasília", "DF"),
     ("Samambaia Sul (Samambaia)", "Quadra QR 112", "72302400", "Brasília", "DF"),
-    ("Norte (Águas Claras)", "Quadra Quadra 107 Rua A", "71920710", "Brasília", "DF"),
+    ("Norte (Águas Claras)", "Quadra 107 Rua A", "71920710", "Brasília", "DF"),
     ("Samambaia Norte (Samambaia)", "Quadra QN 417 Conjunto I", "72323549", "Brasília", "DF"),
-    ("Setor de Mansões Park Way", "Quadra SMPW Quadra 13 Conjunto 5", "71740016", "Brasília", "DF");
+    ("Setor de Mansões Park Way", "Quadra SMPW 13 Conjunto 5", "71740016", "Brasília", "DF");
 insert into `Pessoa`
 	(`nome`, `rg`, `dt_nascimento`, `id_endereco`)
 values
