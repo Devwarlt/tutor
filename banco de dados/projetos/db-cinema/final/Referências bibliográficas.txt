@@ -1,2 +1,5 @@
 [1]. https://www.devmedia.com.br/clausulas-inner-join-left-join-e-right-join-no-sql-server/18930
 [2]. https://www.devmedia.com.br/forum/qual-a-diferenca-entre-ddl-e-dml/563525
+
+O projeto de banco de dados assim como as queries de consulta e manipulação poderão ser acessadas pelo repositório Git do seguinte endereço:
+https://github.com/Devwarlt/tutor/tree/master/banco%20de%20dados/projetos/db-cinema/final
