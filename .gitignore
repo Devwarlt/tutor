@@ -1,5 +1,6 @@
 # Ignore VSCODE Folder
-/.vscode
+.vscode
+!.vscode/tasks.json
 
 # C Bin files
 *.gch
