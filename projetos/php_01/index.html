@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="shortcut icon" href="favicon.png" />
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1>Aplicação PHP #01</h1>
+        Bem-vindo(a) à página inicial de nossa aplicação teste utilizando HTML5, CSS3, JQuery e PHP para cadastro, login
+        e registro de dados variados.
+        <table class="table col-sm-5" style="margin-top: 1%">
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="text" id="username" placeholder="Usuário" />
+                    </td>
+                    <td>
+                        <input type="password" id="password" placeholder="Senha" />
+                    </td>
+                    <td>
+                        <button id="login" class="btn btn-sm btn-success">Entrar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="bg-light text-secondary text-center">
+        <br />
+        <hr />
+        Versão: <b><span id="version"></span></b>
+        <br />
+        Aplicação desenvolvida para fins acadêmicos. Todos os direitos reservados.
+        <br /> &copy; UniProjeção 2019, Departamento
+        de TI.
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="js/settings.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#login").click(function () {
+                var usr = $("#username").val();
+                var psw = $("#password").val();
+
+                if ([...usr].length === 0 || [...psw].length === 0)
+                    return;
+
+                $.post("/php/login.php",
+                    {
+                        username: usr,
+                        password: psw
+                    }).done(function (result) {
+                        alert(result);
+                    });
+            });
+        });
+    </script>
+</body>
+
+</html>
