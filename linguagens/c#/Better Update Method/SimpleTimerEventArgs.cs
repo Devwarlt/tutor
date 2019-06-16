@@ -1,9 +1,3 @@
-public class SimpleTimerEventArgs {
-    public SimpleTimerEventArgs (bool completed) => IsCompleted = completed;
-
-    public bool IsCompleted { get; }
-}
-
 public class SimpleTimer {
     public SimpleTimer (long timeLeft) {
         TimeLeft = timeLeft;
@@ -22,13 +16,13 @@ public class SimpleTimer {
 
     public void Start () => SimpleTimerTask.Start ();
 
-    public delegate void SimpleTimerHandler (object sender, SimpleTimerArgs args);
-    private SimpleTimerEventArgs SimpleTimerEvent;
+    public delegate void SimpleTimerHandler (object sender, EventArgs args);
+    private SimpleTimerHandler SimpleTimerEvent;
     private long TimeLeft { get; } = -1;
     private bool IsCompleted { get; set; } = false;
     private Task SimpleTimerTask { get; }
 
-    private void OnSimpleTimerComplete (object sender, SimpleTimerArgs args) {
+    private void OnSimpleTimerComplete (object sender, EventArgs args) {
         try { DoWhat (); } catch (Exception e) { Program.ConsoleManager.WriteError ($"Error executing an timer's action! [{e}]"); }
         IsCompleted = true;
         SimpleTimerTask.Abort ();
