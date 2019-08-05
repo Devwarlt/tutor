@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8" />
+		<title>[AW] Aula 05/08/2019</title>
+	<head>
+	<body>
+		<h1>Formulário</h1>
+		<form action="action.php" method="GET">
+			<table>
+				<tbody>
+					<tr>
+						<td>Nome:</td>
+						<td><input type="text" name="nome" placeholder="nome" /></td>
+					</tr>
+					<tr>
+						<td>Senha:</td>
+						<td><input type="password" name="senha" placeholder="senha" /></td>
+					</tr>
+					<tr>
+						<td>Sexo:</td>
+						<td>
+							<input type="radio" name="sexo" value="mas" checked /> Masculino
+							<input type="radio" name="sexo" value="fem" /> Feminino
+						</td>
+					</tr>
+					<tr>
+						<td>Linguagem:</td>
+						<td>
+							<input type="checkbox" name="php" value="php" checked /> PHP
+							<input type="checkbox" name="java" value="java" /> Java
+						</td>
+					</tr>
+					<tr>
+						<td>Arquivo</td>
+						<td><input type="file" name="arquivo" /></td>
+					</tr>
+					<tr>
+						<td><button type="submit">Enviar</button></td>
+						<td><button type="reset">Apagar</button></td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+	</body>
+</html>
