@@ -1,7 +1,7 @@
 public partial class Player {
     public virtual void Update () {
         if (DeleteStarted)
-            return; //delte tolereance
+            return; //delete tolereance
 
         RemoveList.Clear (); //Handle timers
         RemoveList = SimpleTimers.ToList ().Where (x => x != null && x.Update ()).ToList ();
