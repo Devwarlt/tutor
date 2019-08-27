@@ -10,16 +10,14 @@
     <center>
         <form method="POST" action="math.php">
             <select name="operador">
+                <option value="???" selected disabled>operadores</option>
                 <option value="maiorNumero">maior número</option>
                 <option value="raizQuadrada">raiz quadrada</option>
                 <option value="somar">somar</option>
                 <option value="multiplicar">multiplicar</option>
-            </select>
-            <label></label><br />
-            <input name="numero1" type="numeric" step="0.01" /><br />
-            <label></label><br />
-            <input name="numero2" type="numeric" step="0.01" /><br />
-            <br />
+            </select><br /><br />
+            <input name="numero1" type="numeric" step="0.01" /><br /><br />
+            <input name="numero2" type="numeric" step="0.01" /><br /><br />
             <button type="submit">Calcular</button>
             <button type="reset">Resetar</button>
         </form>
