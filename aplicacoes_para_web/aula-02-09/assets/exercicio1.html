@@ -1,0 +1,116 @@
+<style>
+	select {
+	   text-align-last: center;
+	   text-align: center;
+	   -ms-text-align-last: center;
+	   -moz-text-align-last: center;
+	}
+	
+	input {
+		text-align: center
+	}
+</style>
+
+<div class="jumbotron">
+	<button type="button" class="btn btn-md btn-success" onClick="window.history.back()">Retornar</button>
+</div>
+
+<div class="d-flex text-center justify-content-center">
+	<table class="table w-50">
+		<thead class="thead-light">
+			<tr><th colspan="2"><h2>Cadastro</h2></th></tr>
+		</thead>
+		<tbody class="table-borderless">
+			<tr>
+				<td><img id="avatar" width="96px" height="96px" src="images/mistery.png"/></td>
+				<td>
+					<form method="POST" action="exercicio1.php">					
+						<table class="table-sm">
+							<tbody>
+								<tr>									
+									<th><label>Nome:</label></th>
+									<td><input class="form-group w-100" name="nome" type="text" /></td>
+								</tr>
+								<tr>									
+									<th><label>Data de nascimento:</label></th>
+									<td><input name="nascimento" class="form-group w-100 datepicker" data-date-format="dd/mm/yyyy" /></td>
+								</tr>
+								<tr>
+									<th><label>Sexo:</label></th>
+									<td>
+										<div class="form-check-inline">
+											<label class="form-check-label">
+												<input class="form-check-input" name="sexo" type="radio" value="masculino" />
+												Masculino
+											</label>
+										</div>
+										<div class="form-check-inline">
+											<label class="form-check-label">
+												<input class="form-check-input" name="sexo" type="radio" value="feminino" />
+												Feminino
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th><label>Formação:</label></th>
+									<td>
+										<select class="form-group w-100" name="formacao">
+											<option selected disabled>Selecionar...</option>
+											<option value="Fundamental Incompleto">Ensino Fundamental Incompleto</option>
+											<option value="Fundamental Completo">Ensino Fundamental Completo</option>
+											<option value="Médio Incompleto">Ensino Médio Incompleto</option>
+											<option value="Médio Complemento">Ensino Médio Completo</option>
+											<option value="Superior Incompleto">Ensino Superior Incompleto</option>
+											<option value="Superior Completo">Ensino Superior Completo</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th><label>Profissão:</label></th>
+									<td>
+										<select class="form-group w-100" name="profissao">
+											<option selected disabled>Selecionar...</option>
+											<option value="Analista de Redes">Analista de Redes</option>
+											<option value="Analista de Sistemas">Analista de Sistemas</option>
+											<option value="Analista de Business Intelligence">Analista de Business Intelligence</option>
+											<option value="Arquiteto de Soluções">Arquiteto de Soluções</option>
+											<option value="Desenvolvedor de Banco de Dados">Desenvolvedor de Banco de Dados</option>
+											<option value="Engenheiro de Software">Engenheiro de Software</option>
+											<option value="Desenvolvedor Web">Desenvolvedor Web</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th><label>CPF:</label></th>
+									<td><input class="form-group w-100" name="cpf" type="text" onkeydown="ValidateCPF(this)" maxlength="14" /></td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td><button class="btn btn-sm btn-primary" type="submit">Cadastrar</button></td>
+									<td><button class="btn btn-sm btn-secondary" type="reset">Limpar</button></td>
+								</tr>
+							</tfoot>
+						</table>
+					</form>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<script>
+	function ValidateCPF(obj) {
+		var cpf = obj.value;
+		var cpfRegex = /^(([0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}))$/;
+		
+		if (!cpfRegex.test(cpf)) {
+			cpf = cpf.replace( /\D/g , "");
+			cpf = cpf.replace( /(\d{3})(\d)/ , "$1.$2");
+			cpf = cpf.replace( /(\d{3})(\d)/ , "$1.$2");
+			cpf = cpf.replace( /(\d{3})(\d{1,2})$/ , "$1-$2");
+				
+			obj.value = cpf;
+		}
+	}
+</script>
