@@ -1,0 +1,35 @@
+<style>
+    input {
+        text-align: center
+    }
+    
+    div {
+        left: 12.5%;
+        margin-top: 5%
+    }
+</style>
+<div class="alert alert-secondary border-secondary w-75 text-center">
+    <h1>Consumo Médio</h1>
+    <hr />
+    <form method="POST" action="index.php">
+        <table class="table table-stripped">
+            <thead>
+                <tr>
+                    <th>Distância total percorrida</th>
+                    <th>Total de combustível</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input name="distancia" type="number" min="1" value="1" /></td>
+                    <td><input name="combustivel" type="number" min="1" value="1" /></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2"><button class="btn w-100 btn-lg btn-secondary text-light">calcular</button></td>
+                </tr>
+            </tfoot>
+        </table>
+    </form>
+</div>
