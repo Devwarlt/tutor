@@ -1,0 +1,47 @@
+<style>
+    input {
+        text-align: center
+    }
+</style>
+
+<div class="d-flex text-center justify-content-center">
+    <form method="POST" action="index.php">
+        <table class="table">
+            <thead class="thead-light">
+                <tr>
+                    <th colspan="2">
+                        <h2>Notas do Semestre</h2>
+                    </th>
+                </tr>
+            </thead>
+            <tbody class="table-borderless">
+                <tr>
+                    <th class="w-50"><label>Nome:</label></th>
+                    <td><input class="form-group" name="nome" type="text" placeholder="aluno" /></td>
+                </tr>
+                <tr>
+                    <th class="w-50"><label>Nota 1:</label></th>
+                    <td><input class="form-group" name="nota1" type="number" min="1" max="10" step="0.01" value="0" /></td>
+                </tr>
+                <tr>
+                    <th class="w-50"><label>Nota 2:</label></th>
+                    <td><input class="form-group" name="nota2" type="number" min="1" max="10" step="0.01" value="0" /></td>
+                </tr>
+                <tr>
+                    <th class="w-50"><label>Nota 3:</label></th>
+                    <td><input class="form-group" name="nota3" type="number" min="1" max="10" step="0.01" value="0" /></td>
+                </tr>
+                <tr>
+                    <th class="w-50"><label>Nota 4:</label></th>
+                    <td><input class="form-group" name="nota4" type="number" min="1" max="10" step="0.01" value="0" /></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td><button class="btn btn-sm btn-primary" type="submit">Calcular</button></td>
+                    <td><button class="btn btn-sm btn-secondary" type="reset">Limpar</button></td>
+                </tr>
+            </tfoot>
+        </table>
+    </form>
+</div>

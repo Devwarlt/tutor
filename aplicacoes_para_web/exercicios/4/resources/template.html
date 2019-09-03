@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>{TITLE}</title>
+    {CSS}
+</head>
+
+<body class="content">
+    {CONTENT}
+    <foot class="p-2 text-secondary">
+        <hr />
+        <p class="text-center">
+            Aplicações para Web<br />
+            <span id="year"></span> &copy; <strong>UniProjeção</strong> - Departamento de Engenharia de Software
+        </p>
+    </foot>
+    {JS}
+    <script>
+        $(document).ready(function() {
+            $("#year").html(new Date().getFullYear());
+        });
+    </script>
+</body>
+
+</html>

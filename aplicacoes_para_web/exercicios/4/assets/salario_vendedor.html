@@ -1,0 +1,39 @@
+<style>
+    input {
+        text-align: center
+    }
+</style>
+
+<div class="d-flex text-center justify-content-center">
+    <form method="POST" action="index.php">
+        <table class="table">
+            <thead class="thead-light">
+                <tr>
+                    <th colspan="2">
+                        <h2>Salário Vendedor</h2>
+                    </th>
+                </tr>
+            </thead>
+            <tbody class="table-borderless">
+                <tr>
+                    <th class="w-50"><label>Nome:</label></th>
+                    <td><input class="form-group" name="nomeVendedor" type="text" placeholder="vendedor" /></td>
+                </tr>
+                <tr>
+                    <th class="w-50"><label>Salário:</label></th>
+                    <td><input class="form-group" name="salario" type="number" min="1" step="1" value="1" /></td>
+                </tr>
+                <tr>
+                    <th class="w-50"><label>Total de vendas:</label></th>
+                    <td><input class="form-group" name="totalVendas" type="number" min="0" step="1" value="0" /></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td><button class="btn btn-sm btn-primary" type="submit">Calcular</button></td>
+                    <td><button class="btn btn-sm btn-secondary" type="reset">Limpar</button></td>
+                </tr>
+            </tfoot>
+        </table>
+    </form>
+</div>
