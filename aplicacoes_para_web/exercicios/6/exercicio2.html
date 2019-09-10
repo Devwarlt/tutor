@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Exercício 2</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body class="content">
+    <div class="jumbotron">
+        <h1>Conversão de Valores</h1>
+        <form method="POST" action="conversao_valores.php">
+            <table>
+                <tbody>
+                    <tr>
+                        <td><label>Cotação - dólar em real (R$):</label></td>
+                        <td><input name="real" type="number" step="0.001" min="0" /></td>
+                    </tr>
+                    <tr>
+                        <td><label>Quantidade disponível (US$):</label></td>
+                        <td><input name="disponivel" type="number" step="0.001" min="0" /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button type="submit" class="btn btn-primary">Converter</button>
+                            <button type="reset" class="btn btn-secondary">Limpar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+    <foot class="p-2 text-secondary">
+        <hr />
+        <p class="text-center">
+            Aplicações para Web<br />
+            <span id="year"></span> &copy; <strong>UniProjeção</strong> - Departamento de Engenharia de Software
+        </p>
+    </foot>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $("#year").html(new Date().getFullYear());
+        });
+    </script>
+</body>
+
+</html>

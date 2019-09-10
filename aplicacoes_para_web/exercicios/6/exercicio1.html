@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Exercício 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body class="content">
+    <form method="POST" action="php/processa.php">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><img id="imagem" src="mystery.png" height="96" width="96" alt="mystery" /></td>
+                        <td>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td><label>Nome:</label></td>
+                                        <td><input name="nome" type="text" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label>Nascimento:</label></td>
+                                        <td><input name="nascimento" type="datetime" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label>Sexo:</label></td>
+                                        <td>
+                                            <label>
+                                                <input name="sexo" type="radio" value="masculino" onclick="document.getElementById('imagem').src = 'boy.png'" /> Masculino
+                                            </label>
+                                            <label>
+                                                <input name="sexo" type="radio" value="feminino" onclick="document.getElementById('imagem').src = 'girl.png'" /> Feminino
+                                            </label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><label>Formação:</label></td>
+                                        <td>
+                                            <select name="formacao">
+                                                <option selected disabled>Selecionar...</option>
+                                                <option value="formacao1">Formação 1</option>
+                                                <option value="formacao2">Formação 2</option>
+                                                <option value="formacao3">Formação 3</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><label>Profissão:</label></td>
+                                        <td>
+                                            <select name="profissao">
+                                                <option selected disabled>Selecionar...</option>
+                                                <option value="profissao1">Profissão 1</option>
+                                                <option value="profissao2">Profissão 2</option>
+                                                <option value="profissao3">Profissão 3</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><label>CPF:</label></td>
+                                        <td><input name="cpf" type="text" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <button class="btn btn-primary" type="submit">Salvar Dados</button>
+                                            <button class="btn btn-secondary" type="reset">Limpar Dados</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+    </form>
+    <foot class="p-2 text-secondary">
+        <hr />
+        <p class="text-center">
+            Aplicações para Web<br />
+            <span id="year"></span> &copy; <strong>UniProjeção</strong> - Departamento de Engenharia de Software
+        </p>
+    </foot>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $("#year").html(new Date().getFullYear());
+        });
+    </script>
+</body>
+
+</html>
