@@ -1,6 +1,5 @@
 #include "locale.h"
 #include "stdarg.h"
-#include "stdbool.h"
 #include "stdio.h"
 #include "stdlib.h"
 
@@ -42,7 +41,7 @@ void showHeader()
 }
 
 /// Sobrescreve uma variável através de seu endereço de memória e
-/// atribui a ela um valor de entrade pelo usuário.
+/// atribui a ela um valor de entrada pelo usuário.
 void getValue(int *value)
 {
     printf("\nValor em decimal > ");
@@ -52,7 +51,7 @@ void getValue(int *value)
 }
 
 /// Continua um método 'void' que não possui nenhum argumento de
-/// entrade e libera espaço da memória de argumentos já realocados.
+/// entrada e libera espaço da memória de argumentos já realocados.
 void continueAndFree(void (*func)(), void *args, ...)
 {
     printf("\n\n");
