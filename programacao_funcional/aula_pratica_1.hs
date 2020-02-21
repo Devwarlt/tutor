@@ -14,7 +14,9 @@ module AulaP1 where
 	triangulo a b c = a <= b + c && b <= a + c && c <= a + b
 
 -- questão 3
-	heron s a b c = sqrt (s * (s - a) * (s - b) * (s - c))
+	heron a b c =
+		let s = (a + b + c) / 2 in
+		sqrt (s * (s - a) * (s - b) * (s - c))
 
 -- questão 4
 	metades :: [a] -> ([a], [a])
