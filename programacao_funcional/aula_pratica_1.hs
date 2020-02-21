@@ -1,5 +1,6 @@
 {-
 	Aula dia 21/02/2020
+	URL: https://www.dcc.fc.up.pt/~sandra/Home/PF1920_files/exercicios.pdf
 -}
 
 module AulaP1 where
