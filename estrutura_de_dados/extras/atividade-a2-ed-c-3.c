@@ -54,8 +54,8 @@ void Push(Stack *stack, char value, char* name) {
 
 char Pop(Stack *stack, char* name) {
 	if (IsEmpty(stack)) {
-		ThrowException("Stack Underflow", "A pilha est· vazia!", false, name);
-		return '¢';
+		ThrowException("Stack Underflow", "A pilha est√° vazia!", false, name);
+		return '¬¢';
 	}
 	
 	char value = stack->Peek->Value;
@@ -74,12 +74,12 @@ char Pop(Stack *stack, char* name) {
 
 bool IsEquals(Stack *a, Stack *b) {
 	if (ENABLE_DEBUG && IsEmpty(a)) {
-		printf("[Equals Event] > Par‚metro *a (Stack) È vazia!");
+		printf("[Equals Event] > Par√¢metro *a (Stack) √© vazia!");
 		return false;
 	}
 		
 	if (ENABLE_DEBUG && IsEmpty(b)) {
-		printf("[Equals Event] > Par‚metro *b (Stack) È vazia!");
+		printf("[Equals Event] > Par√¢metro *b (Stack) √© vazia!");
 		return false;
 	}
 	
@@ -164,7 +164,7 @@ int main(void) {
 	
 	printf("\n---\n");
 	
-	printf("---\ns1 == s3? %s", IsEquals(&s1, &s2) ? "true" : "false");
+	printf("---\ns1 == s3? %s", IsEquals(&s1, &s3) ? "true" : "false");
 	
 	return EXIT_SUCCESS;
 }
