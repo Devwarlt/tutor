@@ -17,7 +17,7 @@
 
 void ThrowException(char* exception, char* message, bool safeExit, char* name) {
 	if (!exception)
-		printf("\n[Undefined Exception]:\n\t[Pilha %s] %s\n", name, exception, message);
+		printf("\n[Undefined Exception]:\n\t[Pilha %s] %s\n", name, message);
 	else
 		printf("\n[%s Exception]:\n\t[Pilha %s] %s\n", exception, name, message);
 	
