@@ -154,8 +154,8 @@ int main(void) {
 	
 	/* push values to s3 stack */
 	Push(&s3, '1', "stack 3");
-	Push(&s3, '2', "stack 3");
 	Push(&s3, '3', "stack 3");
+	Push(&s3, '2', "stack 3");
 	
 	if (ENABLE_DEBUG)
 		printf("---\n");
