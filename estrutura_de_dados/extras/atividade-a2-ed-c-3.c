@@ -138,16 +138,16 @@ int main(void) {
 	
 	/* push values to s1 stack */
 	Push(&s1, '1', "stack 1");
-	Push(&s1, '3', "stack 1");
 	Push(&s1, '2', "stack 1");
+	Push(&s1, '3', "stack 1");
 	
 	if (ENABLE_DEBUG)
 		printf("---\n");
 	
 	/* push values to s2 stack */
 	Push(&s2, '1', "stack 2");
-	Push(&s2, '3', "stack 2");
 	Push(&s2, '2', "stack 2");
+	Push(&s2, '3', "stack 2");
 	
 	if (ENABLE_DEBUG)
 		printf("---\n");
